@@ -1,0 +1,106 @@
+/* CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+:root {
+  --bg-turquoise: #00cccc;
+  --bg-white: #fff;
+  --bg-blue: #81d8d0;
+  --bg-gray: #e5e4e2;
+
+  --fc-light-gray: #8b8589;
+
+  --ff-body: sans-serif;
+  --ff-headers: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  background-color: var(--bg-turquoise);
+  line-height: 1.4;
+  font-family: var(--ff-body);
+  font-weight: normal;
+}
+
+.card-wrapper {
+  background: var(--bg-white);
+  min-width: 20rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.header {
+  position: relative;
+}
+
+.top-blue {
+  background: var(--bg-blue);
+  height: 8rem;
+  width: 100%;
+}
+
+.profile-img {
+  width: 5rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  background: var(--bg-white);
+  padding: 3px;
+}
+
+.profile-info {
+  padding: 1rem 2rem;
+}
+
+.profile-name {
+  font-weight: bold;
+  margin: 2.5rem 0 0.2rem 0;
+}
+
+.profile-age {
+  color: var(--fc-light-gray);
+  font-weight: normal;
+}
+
+.profile-from,
+.interaction-type {
+  color: var(--fc-light-gray);
+  font-size: 0.9rem;
+}
+
+hr {
+  border: none;
+  background: var(--bg-gray);
+  height: 1px;
+}
+
+.social-wrapper {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.total-interaction {
+  font-weight: bold;
+}
