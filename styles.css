@@ -41,31 +41,6 @@ body {
   color: var(--fc-dark-blue);
   font-weight: 400;
   line-height: 1.4;
-
-  position: relative;
-  overflow: hidden;
-}
-
-body::before {
-  content: '';
-  position: absolute;
-  background: url(/images/bg-pattern-top.svg) no-repeat;
-  height: 978px;
-  width: 978px;
-  top: -30rem;
-  left: -15rem;
-  z-index: -1;
-}
-
-body::after {
-  content: '';
-  position: absolute;
-  background: url(/images/bg-pattern-bottom.svg) no-repeat;
-  height: 978px;
-  width: 978px;
-  bottom: -40rem;
-  right: -10rem;
-  z-index: -1;
 }
 
 .card-wrapper {
@@ -136,41 +111,4 @@ hr {
 .total-interaction {
   font-family: var(--ff-headers);
   font-weight: 700;
-}
-
-/* media queries */
-@media (max-width: 80rem) {
-  body::before {
-    top: -30rem;
-    left: -25rem;
-  }
-
-  body::after {
-    bottom: -40rem;
-    right: -20rem;
-  }
-}
-
-@media (max-width: 60rem) {
-  body::before {
-    top: -30rem;
-    left: -35rem;
-  }
-
-  body::after {
-    bottom: -40rem;
-    right: -30rem;
-  }
-}
-
-@media (max-width: 40rem) {
-  body::before {
-    top: -30rem;
-    left: -45rem;
-  }
-
-  body::after {
-    bottom: -40rem;
-    right: -40rem;
-  }
 }
