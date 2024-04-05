@@ -43,7 +43,6 @@ body {
   line-height: 1.4;
 
   position: relative;
-  /* overflow: hidden; */
 }
 
 body::before {
