@@ -60,7 +60,7 @@ body::after {
   content: '';
   position: absolute;
   background: url(/images/bg-pattern-bottom.svg) no-repeat;
-  background-position: 40rem 27rem;
+  background-position: 42rem 25rem;
   height: 100%;
   width: 100%;
   z-index: -1;
@@ -134,4 +134,32 @@ hr {
 .total-interaction {
   font-family: var(--ff-headers);
   font-weight: 700;
+}
+
+/* media queries */
+@media (max-width: 80rem) {
+  body::before {
+    background-position: -20rem -30rem;
+  }
+  body::after {
+    background-position: 35rem 25rem;
+  }
+}
+
+@media (max-width: 60rem) {
+  body::before {
+    background-position: -30rem -30rem;
+  }
+  body::after {
+    background-position: 25rem 25rem;
+  }
+}
+
+@media (max-width: 40rem) {
+  body::before {
+    background-position: -42rem -30rem;
+  }
+  body::after {
+    background-position: 15rem 25rem;
+  }
 }
